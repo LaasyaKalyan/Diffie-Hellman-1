@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Text Transfer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Text Transfer using Diffie-Hellman</h1>
+
+        <div class="key-exchange">
+            <h2>Key Exchange</h2>
+            <button id="generateKeys">Generate Keys</button>
+            <div id="keys">
+                <p>Private Key: <span id="privateKey"></span></p>
+                <p>Public Key: <span id="publicKey"></span></p>
+            </div>
+            <label for="receivedPublicKey">Received Public Key:</label>
+            <input type="text" id="receivedPublicKey">
+            <button id="computeSharedKey">Compute Shared Key</button>
+            <p>Shared Key: <span id="sharedKey"></span></p>
+        </div>
+
+        <div class="message-transfer">
+            <h2>Message Transfer</h2>
+            <textarea id="message" placeholder="Type your message here..."></textarea>
+            <button id="encryptMessage">Encrypt Message</button>
+            <p>Encrypted Message: <span id="encryptedMessage"></span></p>
+            <button id="decryptMessage">Decrypt Message</button>
+            <p>Decrypted Message: <span id="decryptedMessage"></span></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
